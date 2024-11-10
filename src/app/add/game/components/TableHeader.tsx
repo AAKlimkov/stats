@@ -1,7 +1,11 @@
 // src/components/TableHeader.tsx
 import React from "react";
 
-const TableHeader: React.FC = () => {
+interface TableHeaderProps {
+  visibleColumns: Record<string, boolean>;
+}
+
+const TableHeader: React.FC<TableHeaderProps> = ({ visibleColumns }) => {
   const headers = [
     "Ник",
     "Роль",
@@ -25,9 +29,10 @@ const TableHeader: React.FC = () => {
   return (
     <thead>
       <tr>
-        {headers.map((header, index) => (
-          <th key={index}>{header}</th>
-        ))}
+        {headers.map(
+          (header, index) =>
+            visibleColumns[header] && <th key={index}>{header}</th>
+        )}
       </tr>
     </thead>
   );

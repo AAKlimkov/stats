@@ -7,6 +7,7 @@ import AutocompleteInput from "@/app/components/AutocompleteInput";
 const GeneralInfo: React.FC = () => {
   const [tournament, setTournament] = useState<string>("");
   const [judge, setJudge] = useState<string>("");
+  const [dynamic, setDinamic] = useState<string>("");
   const [result, setResult] = useState<string>("");
 
   return (
@@ -54,6 +55,13 @@ const GeneralInfo: React.FC = () => {
         onChange={setResult}
         options={Object.values(VictoryType)}
         placeholder="Результат"
+      />
+      <AutocompleteInput
+        label="Динамика"
+        value={dynamic}
+        onChange={setDinamic}
+        options={["Статика", "Речевая", "Ахалай", "Суставная"]}
+        placeholder="Динамика"
       />
     </div>
   );
