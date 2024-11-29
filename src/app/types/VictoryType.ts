@@ -1,0 +1,17 @@
+export enum VictoryType {
+  CITY_VICTORY_DRY = "Сухая победа города",
+  CITY_VICTORY_6_PLAYER = "Победа города на круг при шестерых",
+  CITY_VICTORY_5_PLAYER = "Победа города на круг при пятерых",
+  CITY_VICTORY_4_PLAYER = "Победа города в угадайке при четверых",
+  CITY_VICTORY = "Победа города в угадайке",
+  CITY_VICTORY_PPK = "Победа города (ППК)",
+  MAFIA_VICTORY_2V2 = "Победа мафии 2в2",
+  MAFIA_VICTORY_1V1 = "Победа мафии 1в1",
+  MAFIA_VICTORY_1V1_PPK = "Победа мафии 1в1 (ППК)",
+  MAFIA_VICTORY_2V2_PPK = "Победа мафии 2в2 (ППК)",
+  MAFIA_VICTORY_3V3 = "Победа мафии 3в3",
+  MAFIA_VICTORY_3V3_PPK = "Победа мафии 3в3 (ППК)",
+  MAFIA_VICTORY_PPK = "Победа мафии (ППК)",
+  RED_VICTORIES = "Победы красные",
+  BLACK_VICTORIES = "Победы черные",
+}
